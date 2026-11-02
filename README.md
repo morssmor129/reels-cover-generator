@@ -1,32 +1,61 @@
 # Kreator okładek do rolek
-**Jester Ads | Wersja 1.0.0**
+**Jester Ads | Wersja 1.1.0**
 
-Przenośny zestaw instrukcji dla asystenta AI. Pomaga ustalić styl marki, przygotować okładkę 9:16 i prowadzić poprawki bez utraty oryginalnej fotografii. Nie jest osobną aplikacją ani automatyczną instalacją edytora.
+Instrukcja dla asystenta AI: konfiguracja stylu marki, okładki 9:16, poprawki z oryginalnej fotografii i uporządkowane pliki.
 
-## Uruchomienie
-Otwórz nowy czat w asystencie, który może odczytywać linki i korzystać z narzędzia do składu warstwowego. Wklej:
+## Skopiuj do nowego czatu
+```text
+Uruchom START.md z tego repozytorium:
+https://github.com/morssmor129/reels-cover-generator
+```
 
-> Załaduj mi kreator okładek z tego linka:  
-> https://raw.githubusercontent.com/morssmor129/reels-cover-generator/main/START.md
+Asystent powinien odczytać [START.md](START.md), sprawdzić dostępne narzędzia i rozpocząć konfigurację.
+Potrzebuje dostępu do linków i narzędzia do składu warstwowego. Sam link nie instaluje edytora ani nie zapewnia dostępu do dysku.
+Jeśli nie otwiera linków, otwórz START.md i wklej jego treść do czatu.
 
-1. Podaj nazwę marki. Odpowiedz na pięć pytań: czcionki, kolory, klimat, wielkość liter i logo/dodatki.
+1. Podaj nazwę marki i odpowiedz na pięć pytań: czcionki, kolory, klimat, wielkość liter i logo/dodatki.
 2. Opcjonalnie załącz 1-3 referencje. Zatwierdź swój **Master Style**.
-3. Prześlij **oryginalne zdjęcie**, nagłówek i opcjonalny podtytuł. Kolejne okładki przygotowuj w tym samym czacie.
+3. Prześlij **oryginalne zdjęcie**, dokładny nagłówek i opcjonalny podtytuł.
 
-Jeśli asystent nie otwiera linków, [otwórz instrukcję START.md](START.md) i wklej jej treść do czatu. Jeżeli nie ma narzędzi do składu warstwowego, powinien poinformować o ograniczeniu i zaproponować odpowiedni edytor. Sam link nie dodaje mu narzędzi.
+## Pliki kreatora
+- [START.md](START.md) - pełna instrukcja i pięć pytań konfiguracyjnych.
+- [MASTER_STYLE_SZABLON.txt](MASTER_STYLE_SZABLON.txt) - pusty profil klienta.
+- [Instrukcja uruchomienia - PDF, 1 strona](docs/instalacja.pdf).
 
-## Pliki
-- [START.md](START.md) - kompletne zasady i pięć pytań konfiguracyjnych.
-- [MASTER_STYLE_SZABLON.txt](MASTER_STYLE_SZABLON.txt) - pusty profil klienta do zachowania u siebie.
-- [Instrukcja uruchomienia - PDF, 1 strona](docs/instalacja.pdf) ([pobierz PDF](https://raw.githubusercontent.com/morssmor129/reels-cover-generator/main/docs/instalacja.pdf)).
+## Automatyczny porządek, gdy asystent ma dostęp do folderu
+W folderze klienta kreator tworzy lub wykorzystuje dwa główne katalogi. Każda okładka ma własny identyfikator z datą i nazwą: `YYYY-MM-DD_nazwa-okladki_01`. Przykład:
 
-## Zasada, która chroni fotografię
-Każdy eksport i każda poprawka powstają z **oryginalnego zdjęcia i aktualnych warstw**. Nie edytujemy łańcucha kolejnych wygenerowanych okładek. Teksty, cienie i dodatki są niezależne od fotografii. Zmiana napisów nie oznacza regenerowania twarzy, dłoni, ubrania lub tła.
+```text
+folder-klienta/
+  01_MATERIALY_ZRODLOWE/
+    marka/
+      MASTER_STYLE.txt
+      referencje/
+    2026-11-02_nazwa-okladki_01/
+      oryginal.jpg
+  02_PRODUKCJA/
+    2026-11-02_nazwa-okladki_01/
+      projekt/
+      robocze/
+      final/
+      status-zlecenia.txt
+```
 
-## Co jest wspólne, a co indywidualne?
-Wspólne są zasady ochrony zdjęcia, format 9:16, czytelność, centralna kompozycja i kontrola marginesów. Czcionki, kolory oraz charakter okładek wynikają z zatwierdzonego profilu klienta.
+- **Materiały źródłowe:** oryginalne zdjęcia i zasoby marki, bez nadpisywania.
+- **Produkcja:** osobny katalog każdej okładki; wszystkie jej poprawki zostają razem.
+- **Final:** tylko wersje wyraźnie zaakceptowane przez klienta. Oględziny asystenta nie zastępują tej akceptacji.
 
-Zachowaj Master Style, referencje i oryginały u siebie. Nie dodawaj prywatnych materiałów do tego repozytorium. W nowym czacie przekaż profil i właściwe materiały; nie zakładaj automatycznego dostępu do poprzednich rozmów.
+Przy braku dostępu do folderu asystent informuje o ograniczeniu. Nie deklaruje zapisu plików na komputerze.
+
+## Kontrola przed oddaniem
+Każda wersja musi przejść kontrolę: oryginalna osoba i scena, dokładny tekst, Master Style, czytelność i kadry, rzeczywisty eksport oraz właściwy zapis.
+Wynik trafia do raportu kontroli. Błąd krytyczny zatrzymuje oddanie wersji. Sprawdzony plik otrzymuje status **do_akceptacji**; dopiero decyzja klienta daje status **zaakceptowana** i kopię w `final/`.
+
+## Zawsze z oryginału
+Każdy eksport i każda poprawka powstają z **oryginalnego zdjęcia i aktualnych warstw**. Nie przerabiamy kolejnych wygenerowanych okładek.
+Teksty, cienie i dodatki są niezależne od fotografii. Zmiana napisów nie oznacza regenerowania twarzy, dłoni, ubrania lub tła.
+
+Zachowaj Master Style i materiały u siebie. Nie dodawaj ich do publicznego repozytorium. W nowym czacie wskaż właściwy profil i folder.
 
 ## Obserwuj Jester Ads
 [Instagram - porady i kolejne materiały](https://track.jesterads.pl/jesterads-instagram/reels-cover-generator)

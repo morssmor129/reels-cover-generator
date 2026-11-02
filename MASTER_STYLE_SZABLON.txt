@@ -3,6 +3,7 @@ MASTER STYLE - PROFIL KLIENTA
 Klient:
 Wersja: v1
 Status: do zatwierdzenia
+Folder klienta (jeśli dostępny):
 
 Klimat:
 Font nagłówka:
@@ -23,6 +24,20 @@ Każda wersja powstaje z oryginału i osobnych warstw graficznych.
 Poprawka tekstu nie zmienia fotografii ani jej kadru.
 Profil nie upoważnia do generatywnej zmiany osób lub sceny.
 Jednorazowy wyjątek nie aktualizuje stylu całej serii.
+
+PORZĄDEK PRZY DOSTĘPIE DO FOLDERU
+01_MATERIALY_ZRODLOWE/marka/ - profil, logo i referencje.
+01_MATERIALY_ZRODLOWE/YYYY-MM-DD_nazwa-okladki_01/ - oryginały danej okładki.
+02_PRODUKCJA/YYYY-MM-DD_nazwa-okladki_01/:
+  projekt/ - skład i raporty kontroli.
+  robocze/ - kolejne wersje do oceny.
+  final/ - wyłącznie eksporty zaakceptowane przez klienta.
+  status-zlecenia.txt - źródła, wersje, statusy i wybrany finał.
+
+Każda wersja przechodzi kontrolę przed oddaniem.
+Kontrola zaliczona = do_akceptacji. Decyzja klienta = zaakceptowana.
+Poprawki tej samej okładki pozostają w tym samym zleceniu.
+Nie nadpisuj oryginałów ani wcześniejszych wersji.
 
 Zatwierdzenie i data:
 Historia zmian:

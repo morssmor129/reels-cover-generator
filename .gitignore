@@ -8,3 +8,7 @@ produkcja/
 __pycache__/
 .DS_Store
 Thumbs.db
+
+# Materiały i produkcja klientów pozostają lokalne.
+01_MATERIALY_ZRODLOWE/
+02_PRODUKCJA/
