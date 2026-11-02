@@ -1,0 +1,28 @@
+MASTER STYLE - PROFIL KLIENTA
+
+Klient:
+Wersja: v1
+Status: do zatwierdzenia
+
+Klimat:
+Font nagłówka:
+Font podtytułu:
+Kolory i ich zastosowanie:
+Zapis nagłówków: WIELKIE LITERY / zgodnie z wpisanym tekstem
+Układ i hierarchia tekstu:
+Marginesy: domyślnie 5% szerokości na stronę; standardowo minimum 3%
+Dopuszczona zwykła korekta fotografii:
+Logo i dodatki: domyślnie tylko zdjęcie i tekst
+Główna referencja:
+Referencje pomocnicze:
+Przybliżenia wymagające potwierdzenia:
+
+STAŁE ZASADY
+Format: 9:16, docelowo 1080 x 1920 px.
+Każda wersja powstaje z oryginału i osobnych warstw graficznych.
+Poprawka tekstu nie zmienia fotografii ani jej kadru.
+Profil nie upoważnia do generatywnej zmiany osób lub sceny.
+Jednorazowy wyjątek nie aktualizuje stylu całej serii.
+
+Zatwierdzenie i data:
+Historia zmian:
